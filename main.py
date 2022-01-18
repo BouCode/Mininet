@@ -9,6 +9,6 @@ def mininet ():
     os.system('cd mininet && git checkout -b mininet-2.3.0 2.3.0')
     os.system('cd mininet/util && ./install.sh')
     os.system('sudo mn --switch ovsbr --test pingall')
-=
+
 if __name__ == '__main__':
     mininet()
