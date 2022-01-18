@@ -5,6 +5,7 @@ def mininet ():
     os.system('sudo apt update')
     os.system('sudo apt install git -y')
     os.system('git clone git://github.com/mininet/mininet && cd mininet')
+    os.system('cd mininet')
     os.system('git checkout -b mininet-2.3.0 2.3.0')
     os.system('cd util')
     os.system('sudo ./install.sh')
