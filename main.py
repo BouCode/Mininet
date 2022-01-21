@@ -11,7 +11,7 @@ def mininet ():
 
 def opendaylight (): 
     print ('Opendaylight')
-    os.system('sudo apt -y install openjdk -8-jre')
+    os.system('sudo apt -y install openjdk-8-jre')
     os.system('sudo update-alternatives --config java')
     os.system("sudo bash -c \'echo JAVA_HOME=\"/usr/lib/jvm/java-8-openjdk-amd64/jre\"\ >> /etc/environment && source /etc/environment'")
     os.system('mkdir opendaylight && cd opendaylight && wget https://nexus.opendaylight.org/content/repositories/opendaylight.release/org/opendaylight/integration/karaf/0.8.3/karaf-0.8.3.tar.gz && tar -zxvf karaf-0.8.3.tar.gz')
